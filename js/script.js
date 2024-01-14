@@ -27,7 +27,7 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
 // klik di luar element
 const hm = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
-const scb = document.querySelector("#shopping-cart-button");
+const sc = document.querySelector("#shopping-cart-button");
 
 document.addEventListener("click", function (e) {
   if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
@@ -38,7 +38,7 @@ document.addEventListener("click", function (e) {
     searchForm.classList.remove("active");
   }
 
-  if (!scb.contains(e.target) && !searchForm.contains(e.target)) {
+  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
     shoppingCart.classList.remove("active");
   }
 });
